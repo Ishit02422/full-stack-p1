@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traffic Signal System</title>
+</head>
+<body>
+  <script>
+    // Prompt the user to enter a traffic light color
+    // → યુઝરને એક પોપઅપ વિન્ડોમાં પૂછે છે કે "red", "yellow" અથવા "green" રંગ લખો.
+    let color = prompt("Enter traffic light color (red, yellow, green):");
+
+    // Convert input to lowercase to handle case-insensitivity
+    // → યુઝરે જે લખ્યું છે તેને નાના અક્ષરમાં બદલી દે છે, જેથી "Red", "RED" અને "red" બધું એકસરખું ગણાય.
+    color = color.toLowerCase();
+
+    // Switch statement to determine the action
+    switch (color) {
+
+      case "red":
+        alert("Stop ");
+        break;
+
+
+      case "yellow":
+        alert("Get Ready");
+        break;
+
+
+      case "green":
+        alert("Go ");
+        break;
+
+        
+      default:
+        alert("Invalid color! Please enter red, yellow, or green.");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arithmetic and Number Check</title>
+</head>
+<body>
+  <script>
+// Prompt the user to enter two numbers
+// બ્રાઉઝરમાં એક પોપ-અપ બોક્સ ખોલે છે.
+// તેમાં લખેલું હશે "Enter the first number:"
+// યૂઝર અહીં પહેલી સંખ્યા લખે છે.
+// prompt()માંથી જે પણ વેલ્યુ મળે છે તે ટેક્સ્ટ (string) સ્વરૂપમાં હોય છે.
+// parseFloat() એ તેને દશાંશ (decimal) અથવા પૂર્ણાંક (integer) સંખ્યા માં બદલે છે.
+
+
+    let num1 = parseFloat(prompt("Enter the first number:"));
+    let num2 = parseFloat(prompt("Enter the second number:"));
+
+    // Perform arithmetic operations
+    let sum = num1 + num2;
+    let difference = num1 - num2;
+    let product = num1 * num2;
+    let quotient = num2 !== 0 ? (num1 / num2) : "Infinity (division by zero)";
+
+    // Display results
+    alert("Sum: " + sum +
+          "\nDifference: " + difference +
+          "\nProduct: " + product +
+          "\nQuotient: " + quotient);
+
+    // Function to check if a number is positive, negative, or zero
+    function checkNumberType(num) {
+      if (num > 0) {
+        return "Positive";
+      } else if (num < 0) {
+        return "Negative";
+      } else {
+        return "Zero";
+      }
+    }
+
+    // Display type of each number
+    alert("First number is: " + checkNumberType(num1) +
+          "\nSecond number is: " + checkNumberType(num2));
+  </script>
+</body>
+</html>

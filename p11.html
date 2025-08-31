@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Form Validation</title>
+</head>
+<body>
+    <h2>Signup Form Validation</h2>
+    <script>
+        // Prompt user for username and password
+        let username = prompt("Enter your username:");
+        let password = prompt("Enter your password:");
+
+        // Validate input lengths
+        if (username.length >= 5 && password.length >= 8) {
+            alert("Signup Successful! ");
+        } else {
+            alert("Error: Username must be at least 5 characters and password at least 8 characters long.");
+        }
+    </script>
+</body>
+</html>

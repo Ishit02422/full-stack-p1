@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Evaluation</title>
+</head>
+<body>
+    <h2>Student Performance Evaluation</h2>
+    <script>
+        // Prompt the user to enter marks for three subjects
+        let subject1 = parseFloat(prompt("Enter marks for Subject 1:"));
+        let subject2 = parseFloat(prompt("Enter marks for Subject 2:"));
+        let subject3 = parseFloat(prompt("Enter marks for Subject 3:"));
+
+        // Calculate total and average marks
+        let total = subject1 + subject2 + subject3;
+        let average = total / 3;
+
+        // Variable to store grade
+        let grade;
+
+        // Grading logic using if...else statements
+        if (average >= 80) {
+            grade = "A";
+        } else if (average >= 60) {
+            grade = "B";
+        } else if (average >= 40) {
+            grade = "C";
+        } else {
+            grade = "Fail";
+        }
+
+        // Display the results in an alert box
+        alert(
+            "Total Marks: " + total +
+            "\nAverage Marks: " + average.toFixed(2) +
+            "\nGrade: " + grade
+        );
+
+        // Also log the result in the console
+        console.log("Total Marks:", total);
+        console.log("Average Marks:", average.toFixed(2));
+        console.log("Grade:", grade);
+    </script>
+</body>
+</html>

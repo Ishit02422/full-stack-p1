@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <script>
+      
+        let choice = prompt("Choose conversion type:\n1. C to F\n2. F to C");
+
+        if (choice === "1") {
+            
+            let celsius = parseFloat(prompt("Enter temperature in Celsius:"));
+            let fahrenheit = (celsius * 9 / 5) + 32;
+            console.log(celsius + "°C = " + fahrenheit.toFixed(2) + "°F");
+        } 
+        else if (choice === "2") {
+            
+            let fahrenheit = parseFloat(prompt("Enter temperature in Fahrenheit:"));
+            let celsius = (fahrenheit - 32) * 5 / 9;
+            console.log(fahrenheit + "°F = " + celsius.toFixed(2) + "°C");
+        } 
+        else {
+            console.log("Invalid choice! Please select 1 or 2.");
+        }
+    </script>
+</body>
+</html>

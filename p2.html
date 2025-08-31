@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prompt and Alert Example</title>
+</head>
+<body>
+  <script>
+    // Prompt the user to enter their name
+    let userName = window.prompt("Please enter your name:");
+
+    // Display a welcome message
+    if (userName) {
+      window.alert("Welcome, " + userName + "!");
+    } else {
+      window.alert("Welcome, Guest!");
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!-- prompt → પેજ ખોલતા જ એક બોક્સ ખુલશે, જે યુઝરને પૂછશે: “Please enter your name:” (કૃપા કરીને તમારું નામ લખો).
+
+યુઝર જે નામ નાખશે તે userName variable માં સંગ્રહિત થશે.
+
+if (userName) → ચેક કરશે કે નામ લખાયું છે કે નહીં.
+
+જો નામ લખાયું હશે તો → alert બોક્સમાં દેખાશે: “Welcome, [યુઝરનું નામ]!”
+
+જો નામ ખાલી રાખવામાં આવ્યું હશે અથવા Cancel દબાવવામાં આવ્યું હશે → alert બોક્સમાં દેખાશે: “Welcome, Guest!” -->

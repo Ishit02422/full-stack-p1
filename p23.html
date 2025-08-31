@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <h2>Movie Ticket Booking System</h2>
+    <script>
+        
+        let movies = ["Avengers: Endgame", "KGF Chapter 2", "RRR", "Pathaan", "3 Idiots"];
+
+       
+        let movieList = "Available Movies:\n";
+        for (let i = 0; i < movies.length; i++) {
+            movieList += i + " - " + movies[i] + "\n";
+        }
+
+       
+        let choice = parseInt(prompt(movieList + "\nEnter the movie index to book your ticket:"));
+
+       
+        if (choice >= 0 && choice < movies.length) {
+            alert("You have booked a ticket for " + movies[choice]);
+        } else {
+            alert("Invalid movie selection!");
+        }
+    </script>
+</body>
+</html>

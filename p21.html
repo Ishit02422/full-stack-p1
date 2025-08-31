@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple To-Do List</title>
+</head>
+<body>
+    <h2>Simple To-Do List</h2>
+
+    <script>
+        // Step 1: Initial To-Do list with at least 3 tasks
+        let tasks = ["Buy groceries", "Complete homework", "Call a friend"];
+
+        console.log("Initial To-Do List:", tasks);
+
+        // Step 2: Add a new task using push()
+        let newTask = prompt("Enter a new task to add:");
+        if (newTask && newTask.trim() !== "") {
+            tasks.push(newTask.trim());
+            console.log("After adding new task:", tasks);
+        } else {
+            console.log("No task added (empty input).");
+        }
+
+        // Step 3: Remove the last task using pop()
+        let removedTask = tasks.pop();
+        console.log("Removed task:", removedTask);
+        console.log("Final To-Do List:", tasks);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Count Program</title>
+</head>
+<body>
+    <h2>Word Count in a String</h2>
+    <script>
+        function countWords() {
+            // Prompt the user for input
+            let text = prompt("Enter a sentence or text:");
+
+            // Remove extra spaces from start/end and split by one or more spaces
+            let wordsArray = text.trim().split(/\s+/);
+
+            // Count the words
+            let wordCount = wordsArray.length;
+
+            // Display word count in the console
+            console.log("Total number of words:", wordCount);
+        }
+
+        // Call the function
+        countWords();
+    </script>
+</body>
+</html>
